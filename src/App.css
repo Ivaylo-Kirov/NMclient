@@ -1,22 +1,73 @@
-.App {
-  text-align: center;
+* {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  background-color:#f3f3f3;
+  color: #666;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #09d3ac;
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  height: 60px;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result {
+  background-color: #f9f9f9;
+  margin: 5px;
+  padding: 15px;
+}
+
+.search_box {
+  padding: 50px;
+}
+
+/* Tablet View */
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  .search {
+      height: 80px;
+  }
+
+  .summary {
+      height: 130px;
+      padding: 20px;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 901px) {
+  .page {
+      width: 900px;
+      margin: 0 auto;
+  }
+
+  .summary {
+      height: 170px;
+      padding: 30px;
+  }
+  
+  .search {
+      height: 120px;
+  }
+   
 }
