@@ -37,7 +37,8 @@ const App = () => {
             return countryA.name < countryB.name ? -1 : 1;
           }).map((country, index) => {
             return <div className='result' key={index}><p>Country:<br /> {country.name}</p><p>Code: <br /> {country.code}</p></div>
-          }) : <h5>No Results</h5>}
+          }) : <h5>No Results</h5>} 
+          {/* The entire first part after ? is for when there is data. Visually it's hard to decipher. */}
       </div>
     </div>
   );
